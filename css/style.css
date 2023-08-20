@@ -1,0 +1,666 @@
+.fw-semibold{
+    font-weight: 500;
+}
+
+.topWord {
+    margin: 50px 0px;
+}
+    
+.topWord h2{
+    color: #1e1e1e;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.topWord p{
+    color: #4e4e4e;
+}
+.topWord .lowLine{
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+}
+body{
+    background-color: #f5f5f5;
+}
+.overLay{
+    background-color: #0078ff;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+/**************************************** NavBar ****************************************/
+nav{
+    z-index: 20;
+    background-color: rgba(0,0,0,0.8);
+}
+nav a{
+    color: white !important;
+}
+nav .nav-item .nav-link{
+    position: relative;
+    padding: 0px !important;
+}
+nav .nav-item .nav-link::before{
+    content: "";
+    position: absolute;
+    top: 5;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid white;
+    width: 0%;
+    height: 100%;
+    transition: all 0.5s 0s ease;
+}
+
+/* nav .nav-item .nav-link span::before{
+    content: "";
+    position: absolute;
+    top: 5;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid white;
+    width: 80%;
+    height: 100%;
+    transition: all 0.5s 0s ease;
+} */
+nav .nav-item:hover .nav-link::before{
+    width: 80%;
+}
+.dropdown-menu2{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 100%;
+}
+.nav-item.dropdown2:hover .dropdown-menu2{
+    display: block !important;
+}
+
+
+/**************************************** Header ****************************************/
+header{
+    background-image: url(images/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header .layout{
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0;
+}
+header .caption{
+    z-index: 2;
+}
+header h3::before{
+    content: "";
+    animation: typing 20s 0s infinite;
+}
+header h3 span{
+    opacity: 1;
+    animation: myCursor 20s 0s infinite;
+}
+
+@keyframes myCursor {
+
+    1.6%{
+        opacity: 1;
+    }
+    6.85%{
+        opacity: 0;
+    }
+    12.1%{
+        opacity: 1;
+    }
+    17.35%{
+        opacity: 0;
+    }
+    22.6%{
+        opacity: 1;
+    }
+    
+
+    25.2%{
+        opacity: 1;
+    }
+    30.45%{
+        opacity: 0;
+    }
+    35.7%{
+        opacity: 1;
+    }
+    40.95%{
+        opacity: 0;
+    }
+    46.2%{
+        opacity: 1;
+    }
+    
+
+    50%{
+        opacity: 1;
+    }
+    57.25%{
+        opacity: 0;
+    }
+    62.5%{
+        opacity: 1;
+    }
+    67.75%{
+        opacity: 0;
+    }
+    73%{
+        opacity: 1;
+    }
+    
+
+    77.4%{
+        opacity: 1;
+    }
+    82.65%{
+        opacity: 0;
+    }
+    87.9%{
+        opacity: 1;
+    }
+    93.15%{
+        opacity: 0;
+    }
+    96.4%{
+        opacity: 1;
+    }
+    
+}
+@keyframes typing {
+    0%{
+        content: "";
+    }
+    0.2%{
+        content: "D";
+    }
+    0.4%{
+        content: "De";
+    }
+    0.6%{
+        content: "Des";
+    }
+    0.8%{
+        content: "Desi";
+    }
+    1%{
+        content: "Desig";
+    }
+    1.2%{
+        content: "Design";
+    }
+    1.4%{
+        content: "Designe";
+    }
+    1.6%{
+        content: "Designer";
+    }
+    22.6%{
+        content: "Designer";
+    }
+    22.8%{
+        content: "Designe";
+    }
+    23%{
+        content: "Design";
+    }
+    23.2%{
+        content: "Desig";
+    }
+    23.4%{
+        content: "Desi";
+    }
+    23.6%{
+        content: "Des";
+    }
+    23.8%{
+        content: "De";
+    }
+    24%{
+        content: "Dev";
+    }
+    24.2%{
+        content: "Deve";
+    }
+    24.4%{
+        content: "Devel";
+    }
+    24.6%{
+        content: "Develo";
+    }
+    24.8%{
+        content: "Develop";
+    }
+    25%{
+        content: "Develope";
+    }
+    25.2%{
+        content: "Developer";
+    }
+    46.2%{
+        content: "Developer";
+    }
+    46.4%{
+        content: "Develope";
+    }
+    46.6%{
+        content: "Develop";
+    }
+    46.8%{
+        content: "Develo";
+    }
+    47%{
+        content: "Devel";
+    }
+    47.2%{
+        content: "Deve";
+    }
+    47.4%{
+        content: "Dev";
+    }
+    47.6%{
+        content: "De";
+    }
+    47.8%{
+        content: "D";
+    }
+    48%{
+        content: "";
+    }
+    48.2%{
+        content: "F";
+    }
+    48.4%{
+        content: "Fr";
+    }
+    48.6%{
+        content: "Fre";
+    }
+    48.8%{
+        content: "Free";
+    }
+    49%{
+        content: "Freel";
+    }
+    49.2%{
+        content: "Freela";
+    }
+    49.4%{
+        content: "Freelan";
+    }
+    49.6%{
+        content: "Freelanc";
+    }
+    49.8%{
+        content: "Freelance";
+    }
+    50%{
+        content: "Freelancer";
+    }
+    73%{
+        content: "Freelancer";
+    }
+    73.2%{
+        content: "Freelance";
+    }
+    73.4%{
+        content: "Freelanc";
+    }
+    73.6%{
+        content: "Freelan";
+    }
+    73.8%{
+        content: "Freela";
+    }
+    74%{
+        content: "Freel";
+    }
+    74.2%{
+        content: "Free";
+    }
+    74.4%{
+        content: "Fre";
+    }
+    74.6%{
+        content: "Fr";
+    }
+    74.8%{
+        content: "F";
+    }
+    75%{
+        content: "";
+    }
+    75.2%{
+        content: "P";
+    }
+    75.4%{
+        content: "Ph";
+    }
+    75.6%{
+        content: "Pho";
+    }
+    75.8%{
+        content: "Phot";
+    }
+    76%{
+        content: "Photo";
+    }
+    76.2%{
+        content: "Photog";
+    }
+    76.4%{
+        content: "Photogr";
+    }
+    76.6%{
+        content: "Photogra";
+    }
+    76.8%{
+        content: "Photograp";
+    }
+    77%{
+        content: "Photograph";
+    }
+    77.2%{
+        content: "Photographe";
+    }
+    77.4%{
+        content: "Photographer";
+    }
+    96.4%{
+        content: "Photographer";
+    }
+    96.6%{
+        content: "Photographe";
+    }
+    96.8%{
+        content: "Photograph";
+    }
+    97%{
+        content: "Photograp";
+    }
+    97.2%{
+        content: "Photogra";
+    }
+    97.4%{
+        content: "Photogr";
+    }
+    97.6%{
+        content: "Photog";
+    }
+    97.8%{
+        content: "Photo";
+    }
+    98%{
+        content: "Phot";
+    }
+    98.2%{
+        content: "Pho";
+    }
+    98.4%{
+        content: "Ph";
+    }
+    98.6%{
+        content: "P";
+    }
+    98.8%{
+        content: "";
+    }
+
+}
+.myBigText{
+    font-size: 4.5rem;
+}
+
+/**************************************** About Me ****************************************/
+.aboutMe .backBar{
+    height: 10px;
+    background-color: #cde1f8;
+    overflow: hidden;
+}
+.aboutMe .frontBar85{
+    width: 85%;
+    height: 10px;
+    background-color: #0078ff;
+}
+.aboutMe .frontBar75{
+    width: 75%;
+    height: 10px;
+    background-color: #0078ff;
+}
+.aboutMe .frontBar50{
+    width: 50%;
+    height: 10px;
+    background-color: #0078ff;
+}
+.aboutMe .frontBar90{
+    width: 90%;
+    height: 10px;
+    background-color: #0078ff;
+}
+
+.underLine{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.underLine::after{
+    content: "";
+    position: absolute;
+    top: 12;
+    left: 0;
+    right: 0;
+    border-bottom: 3px solid #0078ff;
+    border-radius: 2px;
+    width: 75%;
+    height: 100%;
+}
+
+/**************************************** Services ****************************************/
+.servItem{
+    border-radius: 1rem;
+}
+.servIcon{
+    background-color: #fff;
+    border-color: #0078ff !important;
+    border-width: 10px !important;
+    padding: 30px;
+    transition: all 0.5s 0s ease;
+}
+
+/*to make the border exact circle*/
+.servIcon i{
+    width: 40px;
+    height: 40px;
+}
+.servItem:hover .servIcon{
+    color: #fff;
+    background-color: #0078ff;
+    border-color: #cde1f8 !important;
+
+}
+
+/**************************************** Numbers ****************************************/
+.nums{
+    background-image: url(images/counters-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.nums .container{
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.numsIcon{
+    background-color: transparent;
+    border-color: #cde1f8 !important;
+    border-width: 10px !important;
+    padding: 10px;
+}
+.numsIcon i{
+    width: 40px;
+    height: 40px;
+}
+.vh-70{
+    height: 70vh;
+}
+
+/**************************************** Portofolio ****************************************/
+.portIcon i{
+    width: 35px;
+    height: 35px;
+}
+.portIcon {
+    border-color: #0078ff !important;
+    color: #0078ff !important;
+}
+.fs-7{
+    font-size: 0.8rem;
+}
+.special{
+    color: #0078ff;
+}
+
+.PortItem img{
+    transition: all 1s 0s ease !important;
+}
+.PortItem:hover img{
+    transform: scale(1.5);
+}
+
+/**************************************** Slider ****************************************/
+.slider{
+    background-image: url(images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.vh-90{
+    height: 90vh;
+}
+.slider .container{
+    position: relative;
+    z-index: 4;
+}
+.carousel-indicators button{
+    width: 12px !important;
+    height: 12px !important;
+    margin: 0px 5px !important;
+}
+
+/**************************************** Blog ****************************************/
+.portIcon i{
+    width: 35px;
+    height: 35px;
+}
+.portIcon {
+    border-color: #0078ff !important;
+    color: #0078ff !important;
+}
+.portText .fs-7{
+    font-size: 0.8rem;
+}
+.special{
+    color: #0078ff;
+}
+
+.imgCaption{
+    background-color: #0078ff;
+}
+
+.blogItem a{
+    transition: all 0.5s 0s ease;
+    text-decoration: none;
+    color: #1e1e1e;
+}
+.blogText a:hover{
+    color: #0078ff;
+}
+.blogBot img{
+    width: 2rem;
+    height: 2rem;
+}
+.blogBot{
+    background-color: rgba(0,0,0,0.03);
+}
+.blogBot a:hover{
+    color: #0078ff !important;
+}
+
+/**************************************** Contact ****************************************/
+.contact{
+    background-image: url(images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.contact .container{
+    background-color: #fff;
+    z-index: 10;
+}
+
+.contact form button{
+    color: #fff;
+    background: #0062d3;
+    font-size: 1.2rem;
+    border:5px solid white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 20px 0px;
+    transition: all 0.5s 0s ease;
+}
+.contact form button:hover{
+    background: #0078ff;
+    border: 5px solid #cde1f8;
+}
+
+.contact input, .contact textarea{
+    border: 1px solid #ced4da;
+}
+
+.contactIcon{
+    background-color: #fff;
+    border-color: #0078ff !important;
+    border-width: 4px !important;
+    padding: 10px;
+    transition: all 0.5s 0s ease;
+}
+.contactIcon:hover{
+    color: #fff;
+    background-color: #0078ff;
+    border-color: #cde1f8 !important;
+
+}
+/*to make the border exact circle*/
+.contactIcon i{
+    font-size: 1.2rem;
+    width: 20px;
+    height: 20px;
+}
+.contact a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/**************************************** Footer ****************************************/
+.footer{
+    background-color: #0062d3;
+}
+.footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 0px) and (max-width:900px){
+    .dropdown-menu2{
+        display: none;
+        position: static;
+        top: 0;
+    }
+}
